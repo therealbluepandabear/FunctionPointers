@@ -11,5 +11,8 @@ int main() {
     Print(5, '#');
 
     void (*pfn) (int, char) = &Print;
+    (*pfn)(8, '#');
+    pfn(5, '#');
+
     return 0;
 }
