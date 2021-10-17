@@ -8,6 +8,8 @@ void Print(int count, char ch) {
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Print(5, '#');
+
+    void (*pfn) (int, char) = &Print;
     return 0;
 }
